@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    
+    <script>
+      /*
+      const product ={
+        name: 'socks',
+        price: 1090
+      };
+      console.log(product);
+      console.log(product.name);
+      console.log(product.price);
+
+      product.name = 'cotton socks'
+      console.log(product)*/// this used the DOT Notation
+      /*
+      const product2 = {
+        name: 'shirt', 
+        ['delivery-time']: '1 day'
+      };
+      console.log(product2);
+      // dot notation
+      console.log(product2.name);
+      //console.log(product2.delivery-time);// uncaught refference error
+      // Square baractes notation
+      console.log(product2['name']);
+      console.log(product2['delivery-time']);*/
+      const object4 = {
+        message: 'Good job',
+        price: 799,
+        name: 'eric'
+      };
+      // Object destructuring
+      const { message, name, price} = object4;
+      console.log(message);
+      console.log(name);
+      console.log(price);
+       
+      const object5 = {
+        // Shorthand Property
+        // message: message
+        message,
+        // Shorthand Method
+        // method: function function1() {
+        //   console.log('method')
+        // }
+        method() {console.log('method2')}
+      };
+      
+      console.log(object5);
+      object5.method();
+
+    </script>
+
+</body>
+</html>

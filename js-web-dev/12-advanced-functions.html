@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Function</title>
+</head>
+
+<body>
+
+  <button class="js-start-finish-button" onclick="startFinish()">Start</button>
+  <button class="js-add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+  <p class="js-added"></p>
+  <button class="js-click-button" onclick="">Click</button>
+  <script>/*
+function greeting() {
+console.log('Hello');
+}
+greeting();
+const num = 2;
+const function1 = function() {
+console.log('hello2');
+};
+console.log(function1);
+console.log(typeof function1);
+function1();
+
+const object1 = {
+num: 2,
+fun: function greeting() { // method when a function is saved in a object
+console.log('hello3');
+},
+};
+object1.fun();
+function display(param) {
+console.log(param);
+}
+display(2);
+function run(param) {
+param();
+}
+run(function() {
+console.log('hello4');
+});*/
+    /*
+    setTimeout(function() {
+      console.log('timeout');
+    }, 3000)
+    console.log('next line');
+
+    setInterval(function() {
+      console.log('interval');
+    }, 3000);
+    console.log('next line 2');*/
+    // [
+    //   'make dinner', 
+    //   'wash dishes', 
+    //   'watch youtube'].forEach(function(value, index) {
+    //     if (value === 'wash dishes') {
+    //       return;
+    //     }
+
+    //     console.log(index);
+    //   console.log(value);
+    // // });
+    // const add = function() {
+    //   console.log(2);
+    // };
+    // // add();
+    // // add();
+
+    // const runTwice = function(fun) {console.log(fun);
+    // console.log(fun)};
+    // runTwice('12b');
+    /*
+    const startButtonElement = document.querySelector('.js-start-finish-button');
+
+
+    function startFinish() {
+      if (startButtonElement.innerText === 'Start') {
+        startButtonElement.innerHTML = 'Loading...';
+        setTimeout(function () {
+          if (startButtonElement.innerText === 'Loading...') {
+            startButtonElement.innerHTML = 'Finished!';
+          }
+        }, 1000)
+      }
+
+
+      // if (startButton.innerText === 'Start') {
+      // startButton.innerHTML = 'Finished';
+      // } else if (startButton.innerText === 'Finished') {
+      // startButton.innerHTML = 'Start';
+      // }
+    }
+
+    const addToCartELement = document.querySelector('.js-add-to-cart-button');
+    let added = document.querySelector('.js-added');
+    let timeoutId;
+    
+    function addToCart() {
+      added.innerHTML = `Added`;
+      timeoutId = setTimeout(function () {
+        added.innerHTML = '';  
+      }, 2000);
+      
+    }
+    
+    const regularFunction = function() {
+      console.log('Regular');
+    }
+    regularFunction();
+
+    // Arrow functions
+    const arrowFunction = () => {
+      console.log('Arrow');
+    }
+    arrowFunction();
+    */
+    /*
+    const buttonElement = document.querySelector('.js-click-button');
+    const eventListener =  () => {
+      console.log('Click');
+    };
+    buttonElement.addEventListener('click',eventListener);
+
+    buttonElement.removeEventListener('click',eventListener)
+    buttonElement.addEventListener('click', () => {
+      console.log('Click2');
+    });*/
+    console.log([1, -3, 5].filter((value, index) => {
+      /*if (value >= 0) {
+        return true;
+      } else{
+        return false;
+      }*/
+      // return value >= 0;
+    }));
+
+
+    console.log([1, 1, 3].map((value, index) => {
+      return value * 2;
+    }))
+
+    console.log([1, 1, 3].map(value => value * 2));
+  </script>
+</body>
+
+</html>

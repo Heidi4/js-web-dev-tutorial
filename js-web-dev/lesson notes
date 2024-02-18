@@ -1,0 +1,106 @@
+Strategy for JavaScript
+1. think  about what steps we need 
+2. convert the steps into code
+
+steps
+when we click a button 
+1. computer randomly selects a move 
+2. Compare the moves to get the result
+3. display the result in a popup
+
+This is an algorithm
+ now convert to code
+ after the code check all the steps if were done completely
+
+
+ use function 
+ function functionName(parameter) {
+  // code goes here
+  return value;
+ }
+ return from a function 
+ use parameters to a functions
+
+ ## use objects
+
+ const objName = {
+  property: value,
+  property2: value2,
+  ...: ...
+ }
+ delete objName.property2 // this delete the property from the object
+define the obj as variable -- {}
+
+{
+## lets update the steps for our game 
+### steps
+when we click a button 
+1. computer randomly selects a move 
+2. Compare the moves to get the result
+3. update a score
+4. display the result and score in a popup
+
+}
+console.log(product2.name); -- dot notation 
+console.log(product2['delivery-time']); -- [] notation used witn value  that cant be used  with 
+
+## Built-in JSON object
+ const JSONString = JSON.stringify(objName)// stringfies and change to JSON object format
+ JSON.parse(JSONString) changes  to JavaScript object
+
+## localStorage
+
+
+
+## Arrays and Loops
+const myArray = [10, 20, 30];
+    console.log(myArray);
+    
+    console.log(myArray[1]); // to get a value 1 -- represents the index , they start at 0 -- zero indexed array
+
+    myArray[0] = 99;
+    console.log(myArray)
+
+    syntax rules
+    use []
+    separate items with , 
+    they can hold anytime  of data type - strings , numbers, float, objects  other array etc
+    they are typeof object -- special object
+
+## Loops
+### 1. while loop syntax
+let i = 1; // loop variable
+
+    while (i <= 5) { // condition
+      console.log(i); // our code block
+      i++ // increment the variable by step
+    } each loop is called an iteration
+    they also create scope like if and functions
+
+### 2. for loop
+
+for (let i = 1; i <= 5; i++) {
+       console.log(i)
+    }
+
+###  3.  looping an array
+const todoList = [
+  'make dinner', 
+  'eat', 
+  'watch tv'
+];
+
+for (let i = 0; i < todoList.length; i++) {
+  const value = todoList[i];
+  console.log(i, value);
+}
+
+## TEchnique accumulator pattern
+const nums = [1, 1, 3];
+let total = 0; // acumulator variable
+
+for (let i = 5; i < nums.length; i++>) {
+    const num = nums[i];
+    total += num
+}
+console.log(total);
